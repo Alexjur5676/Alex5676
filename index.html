@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    <title>Моя первая страница</title>
+    <title>my first page</title>
   </head>
 
   <body style="background-color: rgb(128, 183, 197)">
@@ -24,9 +24,48 @@
       "
     >
       <a href="index.html">Главная</a>
-      <a href="#link1">О себе</a>
-      <a href="#link2">Мой родной город</a>
+      <a href="about_me.html">О себе</a>
+      <a href="my_hometown.html">Мой родной город</a>
     </header>
+
+    <script language="JavaScript">
+      // let result = prompt("Как тебя зовут?", "");
+      // alert("Привет," + result);
+      function name() {
+        let result = prompt("Как тебя зовут?", "");
+        if (null || result.length === 0) {
+          alert("Ты не ввёл имя");
+          name();
+        } else {
+          alert("Привет, " + result + ", очень приятно!");
+        }
+        return result;
+      }
+      name();
+      function hometown() {
+        let result1 = prompt("Из какого ты города?", "");
+        if (null || result1.length === 0) {
+          alert("Ты не ввёл название города");
+          name();
+        } else {
+          alert(result1 + ", хорошее место!");
+        }
+        return result1;
+      }
+      hometown();
+      function age() {
+        let result2 = prompt("Сколько тебе лет?", "");
+        if (null || result2.length === 0) {
+          alert("Ты не ввёл возраст");
+          name();
+        } else {
+          alert(result2 + ", отличный возраст!");
+        }
+        return result2;
+      }
+      age();
+      alert("Обо мне ты сможешь узнать на моей странице. Заходи.");
+    </script>
 
     <h1
       style="
@@ -43,27 +82,27 @@
       <img width="600" src="img/photo.png" alt="photo" />
     </p>
     <p style="font-size: 24px; line-height: 34px; color: #000000">
-      Добрый день! Меня зовут <strong> <em> Александр Журавлев</strong></em>. На
-      данный момент я являюсь студентом <strong>GeekBrains</strong> на курсе
-      "Цифровые профессии. Тестировщик. Быстрый старт". Я совсем недавно встал
-      на этот путь, но уже верстаю свою первую страницу. В этом мне помог
+      Добрый день! Меня зовут <strong><em>Александр Журавлев</em></strong
+      >. На данный момент я являюсь студентом <strong>GeekBrains</strong> на
+      курсе "Цифровые профессии. Тестировщик. Быстрый старт". Я совсем недавно
+      встал на этот путь, но уже верстаю свою первую страницу. В этом мне помог
       IT-портал <strong>GeekBrains</strong>.
     </p>
 
-    <h2 style="color: rgb(202, 143, 88)" id="link1">О себе</h2>
+    <h2 style="color: rgb(202, 143, 88)">О себе</h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
-      Как я уже писал выше зовут меня Александр. Мне 46 лет. Более подробную информацию
-      можно узнать ниже:
+      Как я уже писал выше зовут меня Александр. Мне 46 лет. Более подробную
+      информацию можно узнать ниже:
     </p>
 
     <ul style="font-size: 20px; line-height: 34px; color: #0e992c">
-      <li><a href="#">Семья</a></li>
-      <li><a href="#">Учеба</a></li>
-      <li><a href="#">Работа</a></li>
-      <li><a href="#">Отдых</a></li>
+      <li><a href="about_me.html">Семья</a></li>
+      <li><a href="about_me.html">Учеба</a></li>
+      <li><a href="about_me.html">Работа</a></li>
+      <li><a href="about_me.html">Отдых</a></li>
     </ul>
 
-    <h2 style="color: rgb(192, 19, 114)" id="link2">Мой родной город</h2>
+    <h2 style="color: rgb(192, 19, 114)">Мой родной город</h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
       <em>
         Родился, вырос и живу я в столице Сибири. В третьем по размеру и
@@ -73,13 +112,18 @@
     </p>
 
     <ol style="font-size: 20px; line-height: 34px; color: #c51266">
-      <li><a href="#">Дата основания</a></li>
-      <li><a href="#">Развитие</a></li>
-      <li><a href="#">Город сейчас</a></li>
+      <li><a href="my_hometown.html">Основание</a></li>
+      <li><a href="my_hometown.html">Развитие</a></li>
+      <li><a href="my_hometown.html">Город сейчас</a></li>
     </ol>
 
     <p style="text-align: center">
-      <img width="600" height="200" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613637854_5-p-fon-dlya-prezentatsii-den-studenta-7.jpg" alt="">
+      <img
+        width="600"
+        height="200"
+        src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613637854_5-p-fon-dlya-prezentatsii-den-studenta-7.jpg"
+        alt=""
+      />
     </p>
 
     <footer
