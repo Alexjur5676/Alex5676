@@ -1,6 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial;
+        /* margin: 0; */
+
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+        margin: 0 auto;
+        align-items: center;
+        width: 50%;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 3.33%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +136,7 @@
         justify-content: center;
         margin-bottom: 50px;
         color: #e90a1d;
+        
       "
     >
       О себе
@@ -43,7 +146,7 @@
       <img width="600" src="img/photo.png" alt="photo" />
     </p>
 
-    <h2 style="color: rgb(202, 143, 88)">Семья</h2>
+    <h2 style="color: rgb(202, 143, 88)"><a name="family">Семья</a></h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
       Родился я 5 июня 1976 года в городе Новосибирске, в семье инженера
       холодильных установок и сотрудницы статистического отдела. Моих родителей
@@ -55,7 +158,7 @@
       и Липецке.
     </p>
 
-    <h2 style="color: rgb(202, 143, 88)">Учеба</h2>
+    <h2 style="color: rgb(202, 143, 88)"><a name="education">Учеба</a></h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
       В 1983 году 1 сентября я пошел в среднюю школу №177 г.Новосибирска. Учился
       я хорошо, посещал множество секций(футбол, плавание, настольный теннис,
@@ -68,8 +171,450 @@
       заочное отделение. В 2001 году получил диплом. На данный момент являюсь
       студентом GeekBrains.
     </p>
+    <h2 style="text-align: center">Мои дипломы и сертификаты</h2>
 
-    <h2 style="color: rgb(202, 143, 88)">Работа</h2>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 30</div>
+        <img src="img/S_B_Analytics.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 30</div>
+        <img src="img/S_B_Layout.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 30</div>
+        <img src="img/S_B_Manual_testing.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 30</div>
+        <img src="img/S_B_Product.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 30</div>
+        <img src="img/S_B_Project.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 30</div>
+        <img src="img/S_B_Zerocode.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 30</div>
+        <img src="img/S_Dop_Urok_1.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 30</div>
+        <img src="img/S_I_Kak_Portfolio_Pomoget_Nayti_Rabotu.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9 / 30</div>
+        <img src="img/S_Itogi_Bloka_Specializacii_IT_Specialist.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10 / 30</div>
+        <img src="img/S_Kurs_Computernoy_Gramotnosti.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 / 30</div>
+        <img src="img/S_Kurs_Matematika_i_Informatika_dlya_Programmistov.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">12 / 30</div>
+        <img src="img/S_L_Gibkie_metodology.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">13 / 30</div>
+        <img src="img/S_L_Vved_V_Control_Versi.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">14 / 30</div>
+        <img src="img/S_L_Vved_v_Programmirovanie.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">15 / 30</div>
+        <img src="img/S_L_Znakomstvo_s_Bazami_Dannich.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">16 / 30</div>
+        <img src="img/S_L_Znakomstvo_s_Web_Technology.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">17 / 30</div>
+        <img src="img/S_L_Znakomstvo_s_Yazikami_Programmirovania.png" style="width: 100%" />
+      </div><div class="mySlides">
+        <div class="numbertext">18 / 30</div>
+        <img src="img/S_P_Vvedenie_v_Control_Versi.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">19 / 30</div>
+        <img src="img/S_Practicheskoe_Zadanie_dlya_Vibora_Specializacii.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">20 / 30</div>
+        <img src="img/S_S_Gibkie_metodology.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">21 / 30</div>
+        <img src="img/S_S_Vved_V_Control_Versi.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">22 / 30</div>
+        <img src="img/S_S_Vved_v_Programmirovanie.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">23 / 30</div>
+        <img src="img/S_S_Znakomstvo_s_Bazami_Dannich.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">24 / 30</div>
+        <img src="img/S_S_Znakomstvo_s_Web_Technology.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">25 / 30</div>
+        <img src="img/S_S_Znakomstvo_s_Yazikami_Programmirovania.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">26 / 30</div>
+        <img src="img/S_Vecherny_put_v_IT_s_Urgantom.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">27 / 30</div>
+        <img src="img/S_Vvodny_kurs_studenta.png" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">28 / 30</div>
+        <img src="img/S_Vvodny_kurs_studenta_GB.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">29 / 30</div>
+        <img src="img/Diplom_NGAVT_1.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">30 / 30</div>
+        <img src="img/Diplom_NGAVT_2.png" style="width: 100%" />
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Analytics.png"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Буткемп Аналитика"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Layout.png"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Буткемп Верстка"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Manual_testing.png"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Буткемп Ручное тестирование"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Product.png"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="Буткемп Управление продуктом"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Project.png"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="Буткемп Управление проектами"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_B_Zerocode.png"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="Буткемп Зерокод"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Dop_Urok_1.png"
+            style="width: 100%"
+            onclick="currentSlide(7)"
+            alt="Дополнительный урок"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_I_Kak_Portfolio_Pomoget_Nayti_Rabotu.png"
+            style="width: 100%"
+            onclick="currentSlide(8)"
+            alt="Курс. Интенсив. Как портфолио поможет найти работу"
+          />
+        </div><div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Itogi_Bloka_Specializacii_IT_Specialist.png"
+            style="width: 100%"
+            onclick="currentSlide(9)"
+            alt="Курс. Итоги блока. Выбор специализации. IT-Специалист"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Kurs_Computernoy_Gramotnosti.png"
+            style="width: 100%"
+            onclick="currentSlide(10)"
+            alt="Курс компьютерной грамотности"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Kurs_Matematika_i_Informatika_dlya_Programmistov.png"
+            style="width: 100%"
+            onclick="currentSlide(11)"
+            alt="Курс. Математика и информатика для программистов"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Gibkie_metodology.png"
+            style="width: 100%"
+            onclick="currentSlide(12)"
+            alt="Курс. Гибкие методологии(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Vved_V_Control_Versi.png"
+            style="width: 100%"
+            onclick="currentSlide(13)"
+            alt="Курс. Введение в контроль версий(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Vved_v_Programmirovanie.png"
+            style="width: 100%"
+            onclick="currentSlide(14)"
+            alt="Курс. Введение в программирование(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Znakomstvo_s_Bazami_Dannich.png"
+            style="width: 100%"
+            onclick="currentSlide(15)"
+            alt="Курс. Знакомство с базами данных(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Znakomstvo_s_Web_Technology.png"
+            style="width: 100%"
+            onclick="currentSlide(16)"
+            alt="Курс. Знакомство с веб-технологиями(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_L_Znakomstvo_s_Yazikami_Programmirovania.png"
+            style="width: 100%"
+            onclick="currentSlide(17)"
+            alt="Курс. Знакомство с языками программирования(лекции)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_P_Vvedenie_v_Control_Versi.png"
+            style="width: 100%"
+            onclick="currentSlide(18)"
+            alt="Курс. Практикум. Введение в контроль версий"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Practicheskoe_Zadanie_dlya_Vibora_Specializacii.png"
+            style="width: 100%"
+            onclick="currentSlide(19)"
+            alt="Курс. Практическое задание для выбора специализации"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Gibkie_metodology.png"
+            style="width: 100%"
+            onclick="currentSlide(20)"
+            alt="Курс. Гибкие методологии(семинары)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Vved_V_Control_Versi.png"
+            style="width: 100%"
+            onclick="currentSlide(21)"
+            alt="Курс. Введение в контроль версий(семинары)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Vved_v_Programmirovanie.png"
+            style="width: 100%"
+            onclick="currentSlide(22)"
+            alt="Курс. Введение в программирование(семинары)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Znakomstvo_s_Bazami_Dannich.png"
+            style="width: 100%"
+            onclick="currentSlide(23)"
+            alt="Курс. Знакомство с базами данных(семинары)"
+          />
+        </div><div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Znakomstvo_s_Web_Technology.png"
+            style="width: 100%"
+            onclick="currentSlide(24)"
+            alt="Курс. Знакомство с веб-технологиями(семинары)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_S_Znakomstvo_s_Yazikami_Programmirovania.png"
+            style="width: 100%"
+            onclick="currentSlide(25)"
+            alt="Курс. Знакомство с языками программирования(семинары)"
+          />
+        </div><div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Vecherny_put_v_IT_s_Urgantom.png"
+            style="width: 100%"
+            onclick="currentSlide(26)"
+            alt="Курс. Вечерний путь в IT с Иваном Ургантом"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Vvodny_kurs_studenta.png"
+            style="width: 100%"
+            onclick="currentSlide(27)"
+            alt="Курс. Вводный курс студента"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/S_Vvodny_kurs_studenta_GB.png"
+            style="width: 100%"
+            onclick="currentSlide(28)"
+            alt="Курс. Вводный курс студента GeekBrains"
+          />
+        </div>
+        
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/Diplom_NGAVT_1.png"
+            style="width: 50%"
+            onclick="currentSlide(29)"
+            alt="Диплом НГАВТ"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/Diplom_NGAVT_2.png"
+            style="width: 50%"
+            onclick="currentSlide(30)"
+            alt="Диплом НГАВТ"
+          />
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+    <h2 style="color: rgb(202, 143, 88)"><a name="work">Работа</a></h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
       В 1999 году я устроился в компанию "Сиб-лайт" на должность менеджера
       торгового зала. Компания занималась торговлей светотехнической продукцией.
@@ -80,7 +625,7 @@
       создание и ведение интернет-магазина. В 2018 году перешел в компанию
       "ЭЛЕКТРА" по тому же профилю.
     </p>
-    <h2 style="color: rgb(202, 143, 88)">Отдых</h2>
+    <h2 style="color: rgb(202, 143, 88)"><a name="rest">Отдых</a></h2>
     <p style="font-size: 20px; line-height: 34px; color: #000000">
       Отдыхать мы любим в пределах России. У нас есть дача на берегу реки Иня,
       там мы проводим почти все летние выходные дни. В отпуске ездим на горный
